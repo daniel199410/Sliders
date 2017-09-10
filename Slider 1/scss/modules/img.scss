@@ -1,0 +1,43 @@
+.img{
+    margin: 0;
+    position: absolute;
+}
+
+img{
+    -webkit-transition: width 1s, height 1s, transform 1s; /* Safari */
+    transition: width 1s, height 1s, transform 1s;
+    -webkit-box-shadow: 14px 10px 68px -16px rgba(0,0,0,0.67);
+    -moz-box-shadow: 14px 10px 68px -16px rgba(0,0,0,0.67);
+    box-shadow: 14px 10px 68px -16px rgba(0,0,0,0.67);
+}
+
+.main, .main img{
+    height: 366px;
+    width: 489px;
+    transform: translate(5px)
+}
+
+.subImage img{
+    width: 316px;
+    height: 237px;
+}
+
+.prueba{
+    left: 50%;
+}
+
+#img-3{
+    z-index:1000;
+}
+
+#img-4, #img2{
+    z-index: 500;
+}
+
+#img-1, #img5{
+    z-index: 250;
+}
+
+#img-6{
+    z-index: 125;
+}
