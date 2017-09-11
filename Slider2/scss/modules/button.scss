@@ -1,0 +1,19 @@
+.button{
+    @include circle(20px);
+    margin-right: 20px;
+    background-color: $white;
+    position: relative;
+}
+
+.inner-button{
+    display: block;
+    @include circle(14px);
+    background-color: $yellow;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+}
+
+.inner-button-active{
+    background-color: $blue;
+}

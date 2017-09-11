@@ -1,0 +1,21 @@
+.bg-image{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    figure{
+        max-height: 557px;
+        overflow: hidden;
+        margin: auto;
+        z-index: -1000;
+        filter: brightness(65%);
+        transform: scale(1.5);
+        transition: 8000ms ease-in-out;
+        -moz-transition: 8000ms ease-in-out; /* Firefox */
+        -webkit-transition: 8000ms ease-in-out; /* Chrome - Safari */
+        -o-transition: 8000ms ease-in-out;
+        background-image: url("../images/img1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 558px;
+    }
+}
