@@ -6,13 +6,12 @@
     h2{
         font-size: 2.5em;
     }
-    .circle{
-        @include circle(250px);
-        position: absolute;
-        top: 20%;
-        left: 38%;
-        background-color: $gray;
-        z-index: -500;
-        filter: opacity(50%);
-    }
+}
+.circle{
+    @include circle(250px);
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    background-color: $gray;
+    filter: opacity(50%);
 }

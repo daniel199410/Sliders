@@ -9,42 +9,45 @@
         <title>Slider</title>
     </head>
     <body>
-        <div class="bg-image">
-            <figure>
-                <!--img src="images/img1.jpg" alt=""-->
+        <div class="bg-image" id="bg-image">
+            <figure class="bg-container" id="bg-container">
+                <img src="images/img1.jpg" class="" id="img1" alt="">
+                <img src="images/img2.jpg" class="" id="img2" alt="">
+                <img src="images/img3.jpg" class="" id="img3" alt="">
+                <img src="images/img4.jpg" class="" id="img4" alt="">
             </figure>
-            <div class="row">
-                <div class="container">
-                    <header>
-                        <nav class="nav nav-primary">
+            <div class="circle"></div>
+        </div>   
+        <div class="row">
+            <div class="container">
+                <header>
+                    <nav class="nav nav-primary">
+                        <div>
+                            <h1><a href=""><i class="fa fa-home yellow-text"></i><span class="white-text">HOME</span><span class="yellow-text">MODELING</span></a></h1>
+                        </div>
+                        <ul>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">ABOUT</a></li>
+                            <li><a href="">SERVICES</a></li>
+                            <li><a href="">GALLERY</a></li>
+                            <li><a href="">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <section>         
+                        <article class="hero">                           
                             <div>
-                                <h1><a href=""><i class="fa fa-home yellow-text"></i><span class="white-text">HOME</span><span class="yellow-text">MODELING</span></a></h1>
-                            </div>
-                            <ul>
-                                <li><a href="">HOME</a></li>
-                                <li><a href="">ABOUT</a></li>
-                                <li><a href="">SERVICES</a></li>
-                                <li><a href="">GALLERY</a></li>
-                                <li><a href="">CONTACT</a></li>
-                            </ul>
-                        </nav>
-                        <section>
-                            <article class="hero">
-                                <div class="circle"></div>
                                 <h2><span class="white-text">Wel</span><span class="yellow-text">Come</span><span class="white-text">&nbsp;To&nbsp;</span><span class="yellow-text">our</span><span class="white-text">Modeling</span></h1>
                                 <p class="yellow-text">Lorem ipsum dolor sit amet</p>
                                 <p class="white-text">consectetur adipiscing elit consectetur adipiscing elit <br> consectetur adipiscing elit</p>
-                            </article>
-                            <nav class="nav nav-slider-buttons">
-                                <a href="" class="button"><span class="inner-button inner-button-active"></span></a>
-                                <a href="" class="button"><span class="inner-button"></span></a>
-                                <a href="" class="button"><span class="inner-button"></span></a>
-                                <a href="" class="button"><span class="inner-button"></span></a>
-                            </nav>
-                        </section>
-                    </header>
-                </div>
+                            </div>
+                        </article>
+                        <nav class="nav nav-slider-buttons" id="buttons">
+                        </nav>
+                    </section>
+                </header>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>        
     </body>
 </html>

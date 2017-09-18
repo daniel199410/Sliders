@@ -2,20 +2,28 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    figure{
+    .container{
         max-height: 557px;
         overflow: hidden;
-        margin: auto;
-        z-index: -1000;
-        filter: brightness(65%);
+        margin: auto;       
+    }
+}
+
+.bg-container{
+    position: relative;
+    margin: 0;
+    filter: brightness(65%);
+    max-height: 600px;
+    overflow: hidden;
+    height: 558px;
+    img{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        transition: 5s ease-in-out;
+        -moz-transition: 5s ease-in-out; /* Firefox */
+        -webkit-transition: 5s ease-in-out; /* Chrome - Safari */
+        -o-transition: 5s ease-in-out;
         transform: scale(1.5);
-        transition: 8000ms ease-in-out;
-        -moz-transition: 8000ms ease-in-out; /* Firefox */
-        -webkit-transition: 8000ms ease-in-out; /* Chrome - Safari */
-        -o-transition: 8000ms ease-in-out;
-        background-image: url("../images/img1.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 558px;
     }
 }

@@ -8,12 +8,12 @@
 .inner-button{
     display: block;
     @include circle(14px);
-    background-color: $yellow;
+    background-color: $blue;
     position: absolute;
     left: 3px;
     top: 3px;
 }
 
 .inner-button-active{
-    background-color: $blue;
+    background-color: $yellow;
 }
