@@ -22,10 +22,11 @@
             <div class="container">
                 <header>
                     <nav class="nav nav-primary">
-                        <div>
+                        <div class="title">
                             <h1><a href=""><i class="fa fa-home yellow-text"></i><span class="white-text">HOME</span><span class="yellow-text">MODELING</span></a></h1>
+                            <span onclick = "menu()"><i class="fa fa-bars white-text menu-icon"></i></span>
                         </div>
-                        <ul>
+                        <ul id="menu">
                             <li><a href="" class="yellow-text">HOME</a></li>
                             <li><a href="">ABOUT</a></li>
                             <li><a href="">SERVICES</a></li>
@@ -42,15 +43,16 @@
                             </div>
                         </article>
                         <nav class="nav nav-slider-buttons" id="buttons">
-                            <a href="" class="button" id="btn0"><span class="inner-button inner-button-active" onclick = "setIndex(0)"></span></a>
-                            <a href="" class="button" id="btn1"><span class="inner-button" onclick = "setIndex(1)"></span></a>
-                            <a href="" class="button" id="btn2"><span class="inner-button" onclick = "setIndex(2)"></span></a>
-                            <a href="" class="button" id="btn3"><span class="inner-button" onclick = "setIndex(3)"></span></a>
+                            <a href="#" class="button" id="btn0" onclick = "setIndex(0)"><span class="inner-button inner-button-active"></span></a>
+                            <a href="#" class="button" id="btn1" onclick = "setIndex(1)"><span class="inner-button"></span></a>
+                            <a href="#" class="button" id="btn2" onclick = "setIndex(2)"><span class="inner-button"></span></a>
+                            <a href="#" class="button" id="btn3" onclick = "setIndex(3)"><span class="inner-button"></span></a>
                         </nav>
                     </section>
                 </header>
             </div>
         </div>
-        <script src="js/main.js"></script>        
+        <script src="js/main.js"></script>
+        <script src="js/menu.js"></script>
     </body>
 </html>

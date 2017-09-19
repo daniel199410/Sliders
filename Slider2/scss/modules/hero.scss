@@ -3,15 +3,38 @@
     text-align: center;
     padding-top: 90px;
     padding-bottom: 70px;
+    @include mobileL{
+        padding-top: 15px;
+        padding-bottom: 0;
+    }
     h2{
         font-size: 2.5em;
+        @include mobileL{
+            font-size: 1.7em;
+        }
+        @include mobileS{
+            font-size: 1.4em;
+        }
     }
 }
 .circle{
-    @include circle(250px);
+    @include circle(250px);  
     position: absolute;
     top: 35%;
     left: 40%;
     background-color: $gray;
     filter: opacity(50%);
+    @include laptop{
+        @include circle(230px);  
+        top: 30%;
+        left: 38%;
+    }
+    @include tablet{
+        @include circle(220px);  
+        top: 30%;
+        left: 36%;
+    }
+    @include mobileL{
+        @include circle(0px);
+    }
 }

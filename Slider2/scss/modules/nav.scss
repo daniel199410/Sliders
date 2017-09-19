@@ -1,20 +1,46 @@
 .nav{
     display: flex;
+    @include mobileL{
+        display: block;
+        text-align: center;
+    }
     ul{
         display: flex;
         list-style: none;
-        align-items: center;
+        align-items: center;       
         li{
             padding: 10px;
             border-right: 1px solid $white;
+            @include mobileL{
+                border-right: none;
+                width: 100%;
+            }
+            a{
+                display: block;
+            }
         }
         li:last-child{
             border-right: none;
+        }
+        @include mobileL{
+            flex-direction: column;
+            width: 100%;
+            padding-left: 0;
+            position: absolute;
+            top: 51px;
+            background-color: #616161;
+            z-index: 1000;
+            left: 100%;
+            transition: 1s;
         }
     }
     a{
         text-decoration: none;
         color: $white;
+        @include mobileL{
+            width: 100%;
+            text-align: center;
+        }
     }
     a:hover{
         color: $yellow;
@@ -24,12 +50,40 @@
 .nav-primary{
     justify-content: space-between;
     border-bottom: 1px solid $white;
+    position: relative;
     h1{
         font-size: 3em;
+        @include laptop{
+            font-size: 2em;
+        }
+        @include tablet{
+            font-size: 1.5em;
+            margin-top: 22px;
+            margin-left: 16px;
+        }
     }
 }
 
 .nav-slider-buttons{
     justify-content: center;
     padding-bottom: 60px;
+    @include mobileL{
+        padding-bottom: 0;
+    }
+}
+
+.title{
+    .menu-icon{
+        display: none;
+    }
+    @include mobileL{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .menu-icon{
+            display: block;
+            padding-right: 16px;
+            font-size: 1.8em;
+        }
+    }
 }
